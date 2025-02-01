@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="19.03.00" ExportDate="2025-02-01T16:37:09.3453312-05:00">
+  <Header>
+    <App Guid="42a2c9ae-046f-4737-b6ab-d981ec1fee88" />
+    <Language Default="en-us" />
+    <Dimensions />
+  </Header>
+  <AttributeSets>
+    <AttributeSet StaticName="App-Resources" Name="App-Resources" Scope="System.App" AlwaysShareConfiguration="false">
+      <Attributes />
+    </AttributeSet>
+    <AttributeSet StaticName="App-Settings" Name="App-Settings" Scope="System.App" AlwaysShareConfiguration="false">
+      <Attributes />
+    </AttributeSet>
+    <AttributeSet StaticName="4ada0a08-525b-4fbd-966f-f9b7c54c2f10" Name="List" Scope="Default" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Label" Type="String" IsTitle="true">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="fb646fda-d688-40bb-8286-6a8120732b8b" Json="True" KeyNumber="7">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Label" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+    <AttributeSet StaticName="85826f5e-c510-4d20-8df8-ea7837283d15" Name="Task" Scope="Default" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Label" Type="String" IsTitle="true">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f3107cc3-2fdb-4945-a072-9d9754e945e4" Json="True" KeyNumber="1">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Label" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="c301dbbb-4971-4717-a316-00038d71ca11" Json="True" KeyNumber="1">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-default" AttributeSetName="@string-default" EntityGUID="5d4ead72-b601-41ff-9902-9b640e7f774f" Json="True" KeyNumber="1">
+            <Value Key="InputFontFamily" Value="" Type="String" />
+            <Value Key="TextWrapping" Value="" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="List" Type="Entity" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="61044039-098b-4784-8220-8d9bdc7734f3" Json="True" KeyNumber="6">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="entity-default" Type="String" />
+            <Value Key="Name" Value="List" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="True" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@Entity" AttributeSetName="@Entity" EntityGUID="a1649829-70e9-443d-9653-62bcc882aef3" Json="True" KeyNumber="6">
+            <Value Key="AllowMultiValue" Value="False" Type="Boolean" />
+            <Value Key="EnableAddExisting" Value="True" Type="Boolean" />
+            <Value Key="EnableCreate" Value="True" Type="Boolean" />
+            <Value Key="EnableDelete" Value="False" Type="Boolean" />
+            <Value Key="EnableEdit" Value="True" Type="Boolean" />
+            <Value Key="EnableRemove" Value="True" Type="Boolean" />
+            <Value Key="EntityType" Value="List" Type="String" />
+            <Value Key="Prefill" Value="" Type="String" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="DueDate" Type="DateTime" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="64aac65a-c438-49ed-a2d1-694026bf4221" Json="True" KeyNumber="8">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="datetime-default" Type="String" />
+            <Value Key="Name" Value="Due Date" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@DateTime" AttributeSetName="@DateTime" EntityGUID="65908c72-9f5f-4546-b569-66d6817df104" Json="True" KeyNumber="8">
+            <Value Key="UseTimePicker" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Priority" Type="String" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="51029e31-8e65-4f14-8a12-7c7c51772e3d" Json="True" KeyNumber="9">
+            <Value Key="CustomJavaScript" Value="" Type="String" />
+            <Value Key="DefaultValue" Value="Low" Type="String" />
+            <Value Key="Disabled" Value="False" Type="Boolean" />
+            <Value Key="DisableTranslation" Value="False" Type="Boolean" />
+            <Value Key="InputType" Value="string-dropdown" Type="String" />
+            <Value Key="Name" Value="Priority" Type="String" />
+            <Value Key="Notes" Value="" Type="String" />
+            <Value Key="Placeholder" Value="" Type="String" />
+            <Value Key="Required" Value="False" Type="Boolean" />
+            <Value Key="ValidationRegExJavaScript" Value="" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@String" AttributeSetName="@String" EntityGUID="bf8658ad-7638-432f-8e92-46110a9599bc" Json="True" KeyNumber="9">
+            <Value Key="DropdownValues" Value="" Type="String" />
+            <Value Key="InputType" Value="" Type="String" />
+          </Entity>
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@string-dropdown" AttributeSetName="@string-dropdown" EntityGUID="318c3b10-5bb1-4139-9281-be542e786a9d" Json="True" KeyNumber="9">
+            <Value Key="DropdownValues" Value="Low&#xA;Medium&#xA;High" Type="String" />
+            <Value Key="DropdownValuesFormat" Value="value-label" Type="String" />
+            <Value Key="EnableTextEntry" Value="False" Type="Boolean" />
+          </Entity>
+        </Attribute>
+        <Attribute StaticName="Complete" Type="Boolean" IsTitle="false">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="1ca52c1e-b2ca-4efc-931a-f60abf96eb04" Json="True" KeyNumber="10">
+            <Value Key="InputType" Value="boolean-default" Type="String" />
+            <Value Key="Name" Value="Complete" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+  </AttributeSets>
+  <Entities>
+    <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="2SexyContent-App" AttributeSetName="2SexyContent-App" EntityGUID="feb31f4d-f57e-401a-8592-4135b7d45734" Json="True" KeyNumber="5">
+      <Value Key="DebugLog" Value="Caller: Create; Line: 50; File: C:\Projects\2sxc\eav-server\ToSic.Eav.Apps\Eav.Apps.Internal\Work\AppCreate\AppCreator.cs&#xA;Caller: InitializeApp; Line: 40; File: C:\Projects\2sxc\eav-server\ToSic.Eav.Apps\Eav.Apps.Internal\Work\AppCreate\AppInitializer.cs&#xA;Message: App: 5; Number: 0&#xA;Caller: CheckIfAllPartsExist; Line: 47; File: C:\Projects\2sxc\eav-server\ToSic.Eav.Apps\Eav.Apps.Internal\Work\AppCreate\AppInitializedChecker.cs&#xA;Message: App: 5; Number: 0&#xA;Message: Config: False, Resources: False, Settings: False; AllOk: False; Number: 0&#xA;Message: App Entity Count: 0; Number: 0&#xA;Message: App ContentType Count: 134; Number: 0&#xA;Message: App Metadata Count: 0; Number: 0&#xA;Message: Has Type App Config: 2SexyContent-App/2SexyContent-App - ToSic.Eav.Data.ContentType; Number: 0&#xA;Message: Has Type App Resources: ; Number: 0&#xA;Message: Has Type App Settings: ; Number: 0&#xA;Message: Some parts missing: appConfig: ; appResources: : appSettings; ; Number: 0" Type="String" />
+      <Value Key="DisplayName" Value="ToDo" Type="String" />
+      <Value Key="Folder" Value="ToDo" Type="String" />
+      <Value Key="OriginalId" Value="" Type="String" />
+      <Value Key="Version" Value="00.00.19" Type="String" />
+    </Entity>
+    <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="f3631b5b-e156-4a9c-ac23-e232099d97e5" KeyNumber="5" />
+    <Entity TargetType="3" AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="36b918d8-3ffa-4c74-878b-f9dce1689c7e" KeyNumber="5" />
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="DataPipeline" AttributeSetName="DataPipeline" EntityGUID="fc098017-753a-432f-85a8-7e43d16259ad" Json="True">
+      <Value Key="AllowEdit" Value="True" Type="Boolean" />
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="HiddenInQueryPicker" Value="False" Type="Boolean" />
+      <Value Key="Name" Value="ToDo" Type="String" />
+      <Value Key="Params" Value="ReplaceThis=27&#xA;ReplaceThisAsWell=[QueryString:Id]" Type="String" />
+      <Value Key="StreamsOut" Value="Default,Header,Tasks,Lists" Type="String" />
+      <Value Key="StreamWiring" Value="1e8e99b4-d00a-41e7-9372-196b24bf3666:Header&gt;Out:Header&#xD;&#xA;1e8e99b4-d00a-41e7-9372-196b24bf3666:Default&gt;Out:Default&#xD;&#xA;2e32dc07-6c73-453c-a87a-c667837dc184:Default&gt;1cbb980f-3bad-4855-a322-ef53e2cf3970:Default&#xD;&#xA;1cbb980f-3bad-4855-a322-ef53e2cf3970:Default&gt;Out:Tasks&#xD;&#xA;2e32dc07-6c73-453c-a87a-c667837dc184:Default&gt;cb0e048d-e4fa-4411-9bec-785b9752f983:Default&#xD;&#xA;cb0e048d-e4fa-4411-9bec-785b9752f983:Default&gt;Out:Lists" Type="String" />
+      <Value Key="TestParameters" Value="[Demo:Demo]=true" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&quot;ShowDataSourceDetails&quot;:true}" Type="String" />
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="1e8e99b4-d00a-41e7-9372-196b24bf3666" Json="True" KeyGuid="fc098017-753a-432f-85a8-7e43d16259ad">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="CMS Block" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="ToSic.Sxc.DataSources.CmsBlock, ToSic.Sxc" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 180,&#xD;&#xA;  &quot;Left&quot;: 220&#xD;&#xA;}" Type="String" />
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="2e32dc07-6c73-453c-a87a-c667837dc184" Json="True" KeyGuid="fc098017-753a-432f-85a8-7e43d16259ad">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="App" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="ToSic.Eav.DataSources.App, ToSic.Eav.DataSources" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 420,&#xD;&#xA;  &quot;Left&quot;: 560&#xD;&#xA;}" Type="String" />
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="|Config ToSic.Eav.DataSources.App" AttributeSetName="ToSic.Eav.DataSources.App" EntityGUID="5da46d19-5992-4109-b44b-1675be8692df" Json="True" KeyGuid="2e32dc07-6c73-453c-a87a-c667837dc184">
+      <Value Key="AppSwitch" Value="5" Type="String" />
+      <Value Key="WithAncestors" Value="" Type="String" />
+      <Value Key="ZoneSwitch" Value="" Type="String" />
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="1cbb980f-3bad-4855-a322-ef53e2cf3970" Json="True" KeyGuid="fc098017-753a-432f-85a8-7e43d16259ad">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="Type-Filter" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="ToSic.Eav.DataSources.EntityTypeFilter, ToSic.Eav.DataSources" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 160,&#xD;&#xA;  &quot;Left&quot;: 560&#xD;&#xA;}" Type="String" />
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="|Config ToSic.Eav.DataSources.EntityTypeFilter" AttributeSetName="ToSic.Eav.DataSources.EntityTypeFilter" EntityGUID="3ddc54af-e4bc-4bbc-895c-c987c0214547" Json="True" KeyGuid="1cbb980f-3bad-4855-a322-ef53e2cf3970">
+      <Value Key="TypeName" Value="85826f5e-c510-4d20-8df8-ea7837283d15" Type="String" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="f107a76d-cbfb-4456-a85b-3e8a557f8a33" Json="True">
+      <Value Key="ContentTypeStaticName" Value="" Type="String" />
+      <Value Key="Icon" Value="" Type="Hyperlink" />
+      <Value Key="Identifier" Value="" Type="String" />
+      <Value Key="IsHidden" Value="False" Type="Boolean" />
+      <Value Key="ListContentTypeStaticName" Value="" Type="String" />
+      <Value Key="ListPresentationTypeStaticName" Value="" Type="String" />
+      <Value Key="Location" Value="Site" Type="String" />
+      <Value Key="Name" Value="ToDo List" Type="String" />
+      <Value Key="Path" Value="todo-list.cshtml" Type="String" />
+      <Value Key="Pipeline" Value="fc098017-753a-432f-85a8-7e43d16259ad" Type="Entity" />
+      <Value Key="PresentationTypeStaticName" Value="" Type="String" />
+      <Value Key="SearchIndexingDisabled" Value="False" Type="Boolean" />
+      <Value Key="SearchIndexingStreams" Value="" Type="String" />
+      <Value Key="StreamsToPublish" Value="" Type="String" />
+      <Value Key="Type" Value="C# Razor" Type="String" />
+      <Value Key="UseForList" Value="False" Type="Boolean" />
+      <Value Key="ViewController" Value="" Type="String" />
+      <Value Key="ViewNameInUrl" Value="" Type="String" />
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="DataPipelinePart" AttributeSetName="DataPipelinePart" EntityGUID="cb0e048d-e4fa-4411-9bec-785b9752f983" Json="True" KeyGuid="fc098017-753a-432f-85a8-7e43d16259ad">
+      <Value Key="Description" Value="" Type="String" />
+      <Value Key="Name" Value="Type-Filter" Type="String" />
+      <Value Key="PartAssemblyAndType" Value="ToSic.Eav.DataSources.EntityTypeFilter, ToSic.Eav.DataSources" Type="String" />
+      <Value Key="VisualDesignerData" Value="{&#xD;&#xA;  &quot;Top&quot;: 160,&#xD;&#xA;  &quot;Left&quot;: 860&#xD;&#xA;}" Type="String" />
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="|Config ToSic.Eav.DataSources.EntityTypeFilter" AttributeSetName="ToSic.Eav.DataSources.EntityTypeFilter" EntityGUID="f1036aba-e870-4bd1-94cf-63c677ca4bb0" Json="True" KeyGuid="cb0e048d-e4fa-4411-9bec-785b9752f983">
+      <Value Key="TypeName" Value="4ada0a08-525b-4fbd-966f-f9b7c54c2f10" Type="String" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="4ada0a08-525b-4fbd-966f-f9b7c54c2f10" AttributeSetName="List" EntityGUID="9a359a9f-da02-4330-962e-fff3e9e6bb63">
+      <Value Key="Label" Value="Work" Type="String" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="4ada0a08-525b-4fbd-966f-f9b7c54c2f10" AttributeSetName="List" EntityGUID="18fb5f1c-40b8-4592-94ff-f8b7af631288">
+      <Value Key="Label" Value="Home" Type="String" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="85826f5e-c510-4d20-8df8-ea7837283d15" AttributeSetName="Task" EntityGUID="a9115e11-ec6b-488d-910c-73a2188a746d">
+      <Value Key="Complete" Value="True" Type="Boolean" />
+      <Value Key="DueDate" Value="2025-01-31T00:00:00" Type="DateTime" />
+      <Value Key="Label" Value="Fix Dishwasher" Type="String" />
+      <Value Key="List" Value="18fb5f1c-40b8-4592-94ff-f8b7af631288" Type="Entity" />
+      <Value Key="Priority" Value="Low" Type="String" />
+    </Entity>
+    <Entity TargetType="1" AssignmentObjectType="Default" AttributeSetStaticName="85826f5e-c510-4d20-8df8-ea7837283d15" AttributeSetName="Task" EntityGUID="7260c5c6-8ec6-439b-8c05-dc88729b426b">
+      <Value Key="Complete" Value="False" Type="Boolean" />
+      <Value Key="DueDate" Value="2025-01-30T00:00:00" Type="DateTime" />
+      <Value Key="Label" Value="Prepare DNN Summit Demo" Type="String" />
+      <Value Key="List" Value="9a359a9f-da02-4330-962e-fff3e9e6bb63" Type="Entity" />
+      <Value Key="Priority" Value="High" Type="String" />
+    </Entity>
+    <Entity TargetType="4" AssignmentObjectType="Entity" AttributeSetStaticName="PermissionConfiguration" AttributeSetName="PermissionConfiguration" EntityGUID="cd7ca1ac-ea0e-4f8d-abf2-9dbd69ff11c3" Json="True" KeyGuid="85826f5e-c510-4d20-8df8-ea7837283d15">
+      <Value Key="Condition" Value="SecurityAccessLevel.Anonymous" Type="String" />
+      <Value Key="Grant" Value="crud" Type="String" />
+      <Value Key="Identity" Value="" Type="String" />
+      <Value Key="PermissionType" Value="contenttype" Type="String" />
+      <Value Key="Title" Value="Security Rule" Type="String" />
+    </Entity>
+  </Entities>
+  <PortalFiles />
+  <PortalFolders>
+    <Folder Id="40" RelativePath="adam/ToDo/" />
+  </PortalFolders>
+</SexyContent>
