@@ -1,0 +1,101 @@
+@inherits Custom.Hybrid.RazorTyped
+@using AppCode.Data;
+@using ToSic.Razor.Blade;
+
+@* Make sure anonymous users have the 2sxc JS API *@
+@Kit.Page.Activate("2sxc.JsCore")
+
+@{
+    @* Setup *@
+    var query = App.GetQuery("ToDo");
+
+    var tasks = AsList<Task>(query.GetStream("Tasks"));
+    var lists = AsList<List>(query.GetStream("Lists"));
+
+    var i = 0;
+}
+
+<div class="bg-light bg-gradient py-3">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-6">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center align-items-center mb-2">
+                        <h1 class="text-center fw-bold me-1">To-Do List</h1>
+                        <button type="button" class="btn p-0 border-0" onclick="$2sxc(@MyContext.Module.Id).cms.run({ action: 'new', params: { contentType: 'Task' }, event: event });">
+                            <i class="fa-2x fa-solid fa-plus text-main-shade"></i>
+                        </button>
+                    </div>
+            
+                    @foreach(var list in lists){
+                        <div class="col-12">
+                            <h3 class="fw-semibold">@list.Label</h3>
+                        </div>
+
+                        <div class="mb-1">
+                            @foreach(var task in tasks.Where(x => x.List.Label == list.Label)){
+                                @* Check Fields *@
+                                bool dueDateExists = task.DueDate != null && task.DueDate != DateTime.MinValue;
+
+                                @* Format Date *@
+                                string formattedDate = $"{task.DueDate.Day} {task.DueDate:MMM} {task.DueDate:yyyy}";
+
+                                @* Setup Priority *@
+                                var priorityOptions = new Dictionary<string, string> {
+                                    { "Low", "text-success" },
+                                    { "Medium", "text-warning" },
+                                    { "High", "text-danger" }
+                                };
+                                string priorityOutput = priorityOptions.ContainsKey(task.Priority) ? priorityOptions[task.Priority] : string.Empty;
+
+                                <div class="col-12 mb-1">
+                                    <div class="bg-main-shade py-1 px-3half rounded text-white">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="completeTask-@i" @(task.Complete ? "checked" : string.Empty) onchange="editTask.update(@task.Id, this.checked)">
+                                                    <label class="form-check-label fw-semibold" for="completeTask-@i">
+                                                        @task.Label
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto ms-auto">
+                                                <div class="row">
+                                                    <div class="col-12 text-end mb-half">
+                                                        <button type="button" class="btn p-0 border-0 me-half" onclick="$2sxc(@MyContext.Module.Id).cms.run({ action: 'edit', params: { entityId: @task.Id }, event: event });">
+                                                            <i class="fa-solid fa-pencil text-sub-shade"></i>
+                                                        </button>
+                                                        <button type="button" class="btn p-0 border-0" onclick="window.editTask.delete(@task.Id)">
+                                                            <i class="fa-solid fa-trash text-danger"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 text-end">
+                                                        <span class="me-half"><i class="fa-solid fa-circle-exclamation @priorityOutput"></i></span>
+                                                        @if(dueDateExists){
+                                                            <span>@formattedDate</span>
+                                                        } else {
+                                                            <span>No Due Date</span>
+                                                        }
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                i++;
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Kit.Page.TurnOn("window.editTask.init()", data: new {
+  moduleId = MyContext.Module.Id
+})
+
+<script src="@App.Folder.Url/js/edit.js"></script>
